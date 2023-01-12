@@ -2,5 +2,7 @@
 - hosts: all
   tasks:
     - name: disable selinux
-      fedora.linux_system_roles.selinux:
-      selinux_state: disabled
+      include_role:
+        name: fedora.linux_system_roles.selinux:
+      vars:
+        selinux_state: disabled
