@@ -1,0 +1,8 @@
+---
+- hosts: all
+  gather_facts: false
+  roles:
+  - role: epfl_si.rhel.user
+    vars:
+      user_name: my_user
+~                          
