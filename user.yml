@@ -4,5 +4,4 @@
   roles:
   - role: epfl_si.rhel.user
     vars:
-      user_name: my_user
-~                          
+      user_name: my_user                       
