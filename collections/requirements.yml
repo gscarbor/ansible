@@ -1,4 +1,4 @@
 collections:
-  - name: redhat.rhel_system_roles
+ # - name: redhat.rhel_system_roles
   
-  - name: epfl_si.rhel
+ # - name: epfl_si.rhel
