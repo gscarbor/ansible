@@ -4,8 +4,8 @@
   tasks:
     - name: yum update system
       ansible.builtin.yum:
-        #list: updates
-        name: '*'
+        list: updates
+        #name: '*'
         state: latest
         update_cache: true
         exclude: kernel*
