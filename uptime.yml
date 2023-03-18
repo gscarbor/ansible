@@ -2,8 +2,6 @@
 - hosts: all
   gather_facts: false
   tasks:
-    - name: test uptime
-      shell: uptime
-#      register: out
-#    - debug:
-#        var: out
+  - name: test uptime
+    shell: uptime
+
