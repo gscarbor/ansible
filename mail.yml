@@ -1,7 +1,7 @@
 ---
-- name: try loading mail
-  hosts: all
+- hosts: all
   gather_facts: no
+  
   collections:
      - community.general
 
