@@ -11,7 +11,7 @@
    tasks:
    - name: Send notification email
       mail:
-          from: PROD-AnsibleTower@ey.com
+          from: bubba@bubbagumpshrimp.com
           to: gump@trump.gov
           subject: Server Deployed, plese refer to the body message.
           body: "scom_deployment_log_file.stdout"
