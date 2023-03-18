@@ -4,4 +4,11 @@
   tasks:
   - name: test uptime
     shell: uptime
-
+  
+  - name: Send notification email
+    mail:
+          from: bubba@bubbagumpshrimp.com
+          to: gump@trump.gov
+          subject: Server Deployed, plese refer to the body message.
+          body: "scom_deployment_log_file.stdout"
+    ignore_errors: yes
