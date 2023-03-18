@@ -1,0 +1,18 @@
+---
+- name: try loading mail
+  hosts: all
+  gather_facts: no
+  collections:
+     - community.general
+
+  vars:
+    capsule: "mycap"
+   
+   tasks:
+   - name: Send notification email
+      mail:
+          from: PROD-AnsibleTower@ey.com
+          to: gump@trump.gov
+          subject: Server Deployed, plese refer to the body message.
+          body: "scom_deployment_log_file.stdout"
+      ignore_errors: yes
