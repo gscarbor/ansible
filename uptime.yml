@@ -3,8 +3,6 @@
   gather_facts: false
   tasks:
   - name: test uptime
-    shell: |
-      uptime
-      sleep 600
+    shell: uptime
   
   
