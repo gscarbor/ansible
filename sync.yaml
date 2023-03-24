@@ -7,11 +7,11 @@
   tasks:
   - name: create file for rsync test
     ansible.builtin.file:
-      path: /payload/rsyncCheck.txt
+      path: rsyncCheck.txt
       state: touch
       mode: '0755'
   - name: rsync connection test
     ansible.posix.synchronize:
-      src: /payload/rsyncCheck.txt
+      src: rsyncCheck.txt
       dest: /dest/rsyncCheck.txt
     delegate_to: "{{ inventory_hostname }}"
