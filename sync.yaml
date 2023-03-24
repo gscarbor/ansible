@@ -11,5 +11,5 @@
       mode: '0755'
   - name: rsync connection test
     ansible.posix.synchronize:
-      src: rsyncCheck.txt
+      src: /payload/rsyncCheck.txt
       dest: /tmp/rsyncCheck.txt
