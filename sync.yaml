@@ -1,6 +1,7 @@
 ---
 - name: Setup Apache
   hosts: all
+  gather_facts: false
   #become: true
 
   tasks:
@@ -13,3 +14,4 @@
     ansible.posix.synchronize:
       src: /payload/rsyncCheck.txt
       dest: /dest/rsyncCheck.txt
+    delegate_to: "{{ inventory_hostname }}"
