@@ -1,8 +1,15 @@
 ---
-- hosts: localhost
-  gather_facts: false
+- name: Setup Apache
+  hosts: all
+  #become: true
+
   tasks:
-    - name: Synchronization of src on the control machine to dest on the remote hosts
-      ansible.posix.synchronize:
-        src: /origin/file.txt
-        dest: /payload/file.txt
+  - name: create file for rsync test
+    ansible.builtin.file:
+      path: rsyncCheck.txt
+      state: touch
+      mode: '0755'
+  - name: rsync connection test
+    ansible.posix.synchronize:
+      src: rsyncCheck.txt
+      dest: /tmp/rsyncCheck.txt
