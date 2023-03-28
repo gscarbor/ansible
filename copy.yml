@@ -6,6 +6,6 @@
   tasks:
   - name: Copy a file to remote servers
     ansible.builtin.copy:
-       src: /uploads/testfile
+       src: testfile
        dest: /root/testfile
-       remote_src: false
+       
