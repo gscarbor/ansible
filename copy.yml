@@ -8,5 +8,5 @@
        #become: true
      copy:
        src: /uploads/testfile
-       dest: /home/grs/testfile
+       dest: /root/testfile
        
