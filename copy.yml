@@ -5,8 +5,7 @@
   # become: yes
   tasks:
   - name: Copy a file to remote servers
-       #become: true
-     copy:
+    ansible.builtin.copy:
        src: /uploads/testfile
        dest: /root/testfile
        
