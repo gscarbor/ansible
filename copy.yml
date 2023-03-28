@@ -1,13 +1,12 @@
-hosts:  all
+---
+- name: test copy function
+  hosts:  all
   gather_facts: False
-  remote_user: solise@ferc.gov
-  become: yes
+  # become: yes
   tasks:
-     - name: Copy a file to remote servers
-       become: true
-       copy:
-
-               src: /uploads/azure_fasttrack.sh
-               dest: /home/solise@ferc.gov/azure_fasttrack.sh
-               owner: root
-               group: root
+  - name: Copy a file to remote servers
+       #become: true
+     copy:
+       src: /uploads/azure_fasttrack.sh
+       dest: /home/solise@ferc.gov/azure_fasttrack.sh
+       
