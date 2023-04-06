@@ -2,5 +2,5 @@
 - hosts: all
   gather_facts: false
   tasks:
-  - name: test uptime
+  - name: test timeout
     shell: sleep 6000
