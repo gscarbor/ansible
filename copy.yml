@@ -7,5 +7,5 @@
   - name: Copy a file to remote servers
     ansible.builtin.copy:
        src: testfile
-       dest: /root/testfile
+       dest: /payload/testfile
        
