@@ -5,7 +5,7 @@
   - name: test uptime
     shell: uptime
   
-  - name: store facts
-    ansible.builtin.setup:
+ # - name: store facts
+  #  ansible.builtin.setup:
     
   
