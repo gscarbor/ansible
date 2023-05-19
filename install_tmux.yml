@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: false
+  tasks:
+    - name: yum update system
+      ansible.builtin.yum:
+        name: tmux
+        state: latest
+        
