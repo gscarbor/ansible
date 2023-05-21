@@ -1,0 +1,12 @@
+---
+- hosts: all
+  gather_facts: false
+  tasks:
+    - name: This task will not report a diff when the file changes
+      ansible.builtin.template:
+        src: testfile
+        dest: /etc/new_testfile
+        owner: root
+        group: root
+        mode: '0600'
+      #diff: false
