@@ -6,4 +6,5 @@
       ansible.builtin.yum:
         name: tmux
         state: latest
+      diff: true
         
