@@ -1,0 +1,12 @@
+---
+- hosts: all
+  gather_facts: false
+  tasks:
+  - name: Expanding apps partion with new disk from free disk
+      community.general.lvol:
+        vg: vg00
+        lv: lv_apps
+        size: 100%FREE
+        pvs: /dev/vdb1
+        resizefs: true
+      delegate_to: "{{ vm_hostname | default(inventory_hostname) }}"
