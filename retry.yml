@@ -1,7 +1,7 @@
 ---
 - name: Retry test
   hosts: all
-  gather-facts: false
+  gather_facts: False
   tasks:
     - name: Validate if the file is present
       file:
