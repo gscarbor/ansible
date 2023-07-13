@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: localhost
   gather_facts: false
   tasks:
     - name: rescue - set fail message in case of any issues in getting project name
