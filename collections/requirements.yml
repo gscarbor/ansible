@@ -3,3 +3,4 @@ collections:
   - name: community.general
   - name: epfl_si.rhel
   - name: ansible.posix
+  - name: azure.azcollection
