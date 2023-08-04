@@ -1,11 +1,10 @@
 ---
 - hosts: localhost
   gather_facts: false
+  vars:
+    errorScenario: "Unable to get project id using NFVD api"
+  
   tasks:
-    - name: rescue - set fail message in case of any issues in getting project name
-      vars:
-        errorScenario: "Unable to get project id using NFVD api"
-
     - name: rescue - debug errorScenario
       debug:
         msg: "{{ errorScenario }}"
