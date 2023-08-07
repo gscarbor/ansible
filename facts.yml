@@ -7,7 +7,7 @@
   tasks:
     - name: set variables
       set_fact:
-        errorScenario: "hello"
+        errorScenario: ""
       
     - debug:
         msg: "{{ errorScenario }}"
