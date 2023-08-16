@@ -8,4 +8,4 @@
 
     - name: rescue - debug errorScenario
       debug:
-        msg: "{{ errorScenario }}"
+        msg: "{{ errorScenario }}" 
