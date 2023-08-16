@@ -2,9 +2,9 @@
 - hosts: localhost
   gather_facts: false
   tasks:
-    - name: rescue - set fail message in case of any issues in getting project name
-      set_fact:
-        errorScenario: "Unable to get project id using NFVD api"
+   # - name: rescue - set fail message in case of any issues in getting project name
+   #   set_fact:
+   #     errorScenario: "Unable to get project id using NFVD api"
 
     - name: rescue - debug errorScenario
       debug:
