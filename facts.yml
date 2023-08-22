@@ -1,11 +1,14 @@
 ---
 - hosts: localhost
   gather_facts: false
+  vars:
+    epic: true
   tasks:
     - name: rescue - set fail message in case of any issues in getting project name
       set_fact:
-        errorScenario: ""
+        errorScenario: "blahblahblah"
 
     - name: rescue - debug errorScenario
       debug:
         msg: "{{ errorScenario }}" 
+      when: not epic
