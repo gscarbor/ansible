@@ -4,7 +4,6 @@ CDP54_cm:
 cluster:
   hosts:
     gbl20175158.systems.uk.hsbc:
-      jumper_port: 5555
     gbl20175159.systems.uk.hsbc:
     gbl20175160.systems.uk.hsbc:
     gbl20175161.systems.uk.hsbc:
@@ -13,8 +12,4 @@ cluster:
     gbl20175164.systems.uk.hsbc:
     gbl25094848.hc.cloud.uk.hsbc:
   vars:
-    cluster_name: CDP54
-    cm_host: gbl20175164.systems.uk.hsbc
-    ansible_become_method: dzdo
-    cluster_hostgroup: cluster
-    cm_hostgroup: CDP54_cm
+    jumper_port: 1234
