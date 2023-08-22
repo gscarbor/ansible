@@ -2,14 +2,15 @@ CDP54_cm:
   hosts:
     gbl20175164.systems.uk.hsbc:
 cluster:
- hosts:
-   gbl20175158.systems.uk.hsbc:
-   gbl20175159.systems.uk.hsbc:
-   gbl20175160.systems.uk.hsbc:
-   gbl20175161.systems.uk.hsbc:
-   gbl20175162.systems.uk.hsbc:
-   gbl20175163.systems.uk.hsbc:
-   gbl20175164.systems.uk.hsbc:
-   gbl25094848.hc.cloud.uk.hsbc:
- vars:
+  hosts:
+    gbl20175158.systems.uk.hsbc:
+    gbl20175159.systems.uk.hsbc:
+    gbl20175160.systems.uk.hsbc:
+    gbl20175161.systems.uk.hsbc:
+    gbl20175162.systems.uk.hsbc:
+    gbl20175163.systems.uk.hsbc:
+    gbl20175164.systems.uk.hsbc:
+    gbl25094848.hc.cloud.uk.hsbc:
+
+vars:
    jumper_port: 1234
