@@ -12,9 +12,9 @@ cluster:
     gbl20175163.systems.uk.hsbc:
     gbl20175164.systems.uk.hsbc:
     gbl25094848.hc.cloud.uk.hsbc:
-#  vars:
- #   cluster_name: CDP54
-  #  cm_host: gbl20175164.systems.uk.hsbc
-   # ansible_become_method: dzdo
-   # cluster_hostgroup: cluster
-   # cm_hostgroup: CDP54_cm
+  vars:
+    cluster_name: CDP54
+    cm_host: gbl20175164.systems.uk.hsbc
+    ansible_become_method: dzdo
+    cluster_hostgroup: cluster
+    cm_hostgroup: CDP54_cm
