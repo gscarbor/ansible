@@ -5,6 +5,7 @@ CDP54_cm:
 cluster:
   hosts:
     gbl20175158.systems.uk.hsbc:
+      jumper_port: 5555
     gbl20175159.systems.uk.hsbc:
     gbl20175160.systems.uk.hsbc:
     gbl20175161.systems.uk.hsbc:
