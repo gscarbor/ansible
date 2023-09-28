@@ -1,4 +1,5 @@
 [vcenter_idrac]
+beta.local.net
 10.246.76.71 idrac_ip='10.246.76.71' idrac_user='****' idrac_pwd='****'
 10.246.76.72 idrac_ip='10.246.76.72' idrac_user='****' idrac_pwd='****'
 10.246.76.73 idrac_ip='10.246.76.73' idrac_user='****' idrac_pwd='****'
