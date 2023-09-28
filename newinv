@@ -1,0 +1,8 @@
+[webservers]
+alpha.local.net
+beta.local.net
+
+[joker]
+gamma.local.net
+192.168.1.2
+bertha.local.net
