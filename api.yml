@@ -10,8 +10,8 @@
         password: "{{ ansible_password }}"
         validate_certs: False
         return_content: yes
-        headers:
-          Content-Type: "application/json"
-          Accept: "application/json"
-        body_format: json
+        #headers:
+         # Content-Type: "application/json"
+         # Accept: "application/json"
+        #body_format: json
       register: Login
