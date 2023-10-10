@@ -10,6 +10,7 @@
         password: "{{ ansible_password }}"
         validate_certs: False
         return_content: yes
+        force_basic_auth: yes
         #headers:
          # Content-Type: "application/json"
          # Accept: "application/json"
