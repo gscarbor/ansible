@@ -1,0 +1,17 @@
+---
+- hosts: all
+  gather_facts: true
+  tasks:
+  - name: test api connection
+    ansible.builtin.uri:
+        url: "https://aap23.local.net/api/v2/users/"
+        method: GET
+        user: "{{ ansible_user }}"
+        password: "{{ ansible_password }}"
+        validate_certs: False
+        return_content: yes
+        headers:
+          Content-Type: "application/json"
+          Accept: "application/json"
+        body_format: json
+      register: Login
