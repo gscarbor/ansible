@@ -27,4 +27,4 @@
           organization: Default
           job_args:
            #extra_vars:
-              limit: "{{ hosts }}"
+              limit: node761.local.net
