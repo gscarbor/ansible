@@ -26,4 +26,5 @@
           name: version
           organization: Default
           job_args:
-            limit: "node761.local.net"
+            extra_vars:
+              limit: "node761.local.net"
