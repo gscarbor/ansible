@@ -26,4 +26,4 @@
           name: version
           organization: Default
           job_args:
-            limit: "{{ node761.local.net }}"
+            limit: "node761.local.net"
