@@ -12,11 +12,11 @@
       action:
         run_job_template:
           name: uptime
-          organization: default
+          organization: Default
           
     - name: Web site is down
       condition: event.url_check.status == "down"
       action:
         run_job_template:
           name: version
-          organization: default
+          organization: Default
