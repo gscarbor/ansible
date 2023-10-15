@@ -27,4 +27,4 @@
           organization: Default
           job_args:
            #extra_vars:
-              limit: node761.local.net
+              limit: "{{ event.payload.meta.hosts }}"
