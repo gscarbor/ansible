@@ -10,11 +10,11 @@
       condition: event.url_check.status == "up"
       ##Define the action that should be taken
       action:
-        run_playbook:
-          name: uptime.yml
+        run_workflow_template:
+          name: uptime
       
     - name: Web site is down
       condition: event.url_check.status == "down"
       action:
-        run_playbook:
-          name: version.yml
+        run_workflow_template:
+          name: version
