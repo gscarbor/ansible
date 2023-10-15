@@ -1,5 +1,5 @@
 - name: webcheck of file server
-  hosts: web
+  #hosts: web
   sources:
     - ansible.eda.url_check::
         urls:
