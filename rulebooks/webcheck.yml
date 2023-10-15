@@ -10,11 +10,11 @@
       condition: event.url_check.status == "up"
       ##Define the action that should be taken
       action:
-        run_workflow_template:
+        run_job_template:
           name: uptime
       
     - name: Web site is down
       condition: event.url_check.status == "down"
       action:
-        run_workflow_template:
+        run_job_template:
           name: version
