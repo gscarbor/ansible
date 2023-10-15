@@ -1,7 +1,7 @@
 - name: webcheck of file server
   hosts: web
   sources:
-    - ansible.eda.url_check::
+    - ansible.eda.url_check:
         urls:
           - http://asgard.local.net
         delay: 10
