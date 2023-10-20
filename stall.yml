@@ -1,6 +1,8 @@
 ---
 - hosts: all
   gather_facts: false
+  vars:
+    ansible_command_timeout: 15
   tasks:
   - name: test timeout
-    shell: sleep 6000
+    shell: sleep 300
