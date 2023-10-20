@@ -4,5 +4,5 @@
   tasks:
   - name: test timeout
     shell: sleep 300
-    async: 15
+    timeout: 15
   
