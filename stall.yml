@@ -4,5 +4,5 @@
   tasks:
   - name: test timeout
     shell: sleep 300
-    vars:
-      ansible_command_timeout: 15
+    async: 15
+  
