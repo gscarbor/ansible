@@ -7,5 +7,5 @@
         name: TestInv
         organization: Default
         state: present
-        controller_username: admin
+        controller_username: root
         controller_password: redhat
