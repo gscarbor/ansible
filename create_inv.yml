@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: false
+  tasks:
+    - name: create new inventory
+      ansible.controller.inventory:
+        name: TestInv
+        organization: Default
+        state: present
