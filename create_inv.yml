@@ -8,5 +8,5 @@
         organization: Default
         state: present
         controller_host: aap24.local.net
-        controller_username: root
+        controller_username: admin
         controller_password: redhat
