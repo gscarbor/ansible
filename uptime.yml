@@ -3,8 +3,8 @@
   gather_facts: true
   tasks:
   - name: test uptime
-    #shell: uptime
-    command: kjskjhs
+    shell: uptime
+    #command: kjskjhs
     register: command_output
     
   - debug: 
