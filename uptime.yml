@@ -2,14 +2,14 @@
 - hosts: all
   gather_facts: true
   tasks:
-  - name: test uptime
+  - name: output hostname
     shell: hostname
     #command: kjskjhs
     register: command_output
     
   - debug: 
       var: command_output.stdout_lines
- # - name: store facts
-  #  ansible.builtin.setup:
-    
+ 
+  - name: ssh into another host
+    shell:  'sshpass -p "redhat" ssh -o StrictHostKeyChecking=no root@aap23.local.net "hostname"'   
   
