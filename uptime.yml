@@ -15,5 +15,5 @@
     register: command_output2
 
 
-    - debug:
-        var: command_output2.stdout_lines
+  - debug:
+      var: command_output2.stdout_lines
