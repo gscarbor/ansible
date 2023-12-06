@@ -10,10 +10,10 @@
   - debug: 
       var: command_output.stdout_lines
  
-  - name: ssh into another host
-    shell:  'sshpass -p "redhat" ssh -o StrictHostKeyChecking=no root@aap23.local.net "hostname"'   
-    register: command_output2
+#  - name: ssh into another host
+ #   shell:  'sshpass -p "redhat" ssh -o StrictHostKeyChecking=no root@aap23.local.net "hostname"'   
+  #  register: command_output2
 
 
-    - debug:
-        var: command_output2.stdout_lines
+   # - debug:
+    #    var: command_output2.stdout_lines
