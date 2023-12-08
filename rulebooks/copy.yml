@@ -1,10 +1,9 @@
 ---
 - name: test copy function
-  hosts:  all
-  gather_facts: False
-  # become: yes
+  hosts: all
+  gather_facts: false
   tasks:
-  - name: Copy a file to remote servers
+  - name: Copy file
     ansible.builtin.copy:
-       src: testfile
-       dest: /payload/testfile
+      src: testfile
+      dest: /payload/testfile
