@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  timeout: 17
+  timeout: 30
   gather_facts: false
   tasks:
   - name: test timeout
