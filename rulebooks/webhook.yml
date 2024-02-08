@@ -21,10 +21,6 @@
   ## Define the action we should take should the condition be met
 
       action:
-        # https://access.redhat.com/solutions/7024714
-        #run_playbook:
-          #name: aap_basic_service_recovery_httpd.yml
-
         run_job_template:
           name: version
           organization: Default
