@@ -2,6 +2,14 @@
 - name: Listen for events on a webhook
   hosts: all
 
+
+# curl call to trigger the event
+# curl --header "Content-Type: application/json"   --request POST   --data '{"message": "CRITICAL", "event":{"fields":{"source":"hostname/ip of the source of API call"}}}'   http://eda.server.com:5000/payload
+
+
+
+
+
   ## Define our source for events
 
   sources:
