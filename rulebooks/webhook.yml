@@ -25,15 +25,12 @@
   rules:
     - name: service|fault state(httpd)
       condition: event.payload.message == "CRITICAL"    #and event.payload.meta.hosts == "node761.local.net"
-      #throttle:
-       # group_by_attributes:
-        #  - event.payload.event.fields.source
+
+       
   ## Define the action we should take should the condition be met
 
       action:
         run_job_template:
           name: version
           organization: Default
-          #job_args:
-           #extra_vars:
-          #    limit: "{{ event.payload.meta.hosts }}"
+          
