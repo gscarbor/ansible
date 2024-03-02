@@ -1,9 +1,12 @@
 ---
-- hosts: all
+- hosts: localhost
+  #hosts: all
+  remote_user: root
   gather_facts: false
   tasks:
   - name: output uptime
-    shell: uptime
+    shell: whoami
+    #shell: uptime
     register: command_output
     
   - debug: 
