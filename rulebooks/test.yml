@@ -11,5 +11,5 @@
       condition: event.payload.message == "CRITICAL"
       action:
         run_job_template:
-          name: "version"
+          name: "aaversion"
           organization: "default"
