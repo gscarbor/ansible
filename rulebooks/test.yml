@@ -1,0 +1,15 @@
+- name: Creating a SN incident and collecting information about High VM Util Alerts from LogicMonitor
+  hosts: all
+  sources:
+    - name: listen for alerts
+      ansible.eda.webhook:
+        host: 0.0.0.0
+        port: 8000
+
+  rules:
+    - name: Alert payload from LM for CPU issue
+      condition: event.payload.message == "CRITICAL"
+      action:
+        run_job_template:
+          name: "version"
+          organization: "default"
