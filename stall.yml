@@ -1,9 +1,9 @@
 ---
 - hosts: all
-  timeout: 30
+  #timeout: 30
   gather_facts: false
   tasks:
-  - name: test timeout
-    shell: sleep 300
+  - name: test timeout sleep 30
+    shell: sleep 30
     
   
