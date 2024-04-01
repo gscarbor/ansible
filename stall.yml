@@ -3,7 +3,10 @@
   #timeout: 30
   gather_facts: false
   tasks:
-  - name: test timeout sleep 30
-    shell: sleep 30
+  - name: test timeout sleep 8 hrs
+    shell: sleep 28800
+
+  - name: run uptime
+    shell: uptime
     
   
