@@ -17,7 +17,7 @@ all:
     ipa_environment: qa
     ssl_alternative_common_name: alpha.local.net
     
-    ipaserver_domain: omicron.local.net
+    ipaserver_domain: judas.local.net
     ipaserver_realm: doggy.local.net
     
     # The desired idmax:
