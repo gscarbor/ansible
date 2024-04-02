@@ -23,7 +23,7 @@ all:
     # The desired idmax:
     #        ipaserver_idmax: 1147483646
    # ipaserver_idstart: 100000
-  #  ipaserver_idmax: 15000000
+    ipaserver_idmax: 15000000
 
     # lab/prod current settings for example (@label)
     # ipaserver_idstart: "100000"
