@@ -17,17 +17,17 @@ all:
     ipa_environment: qa
     ssl_alternative_common_name: alpha.local.net
     
-    ipaserver_domain: kitty.local.net
-    # ipaserver_realm: fishy.local.net
+    #ipaserver_domain: kitty.local.net
+    ipaserver_realm: fluffy.local.net
     
     # The desired idmax:
     #        ipaserver_idmax: 1147483646
     # ipaserver_idstart: 140000
-    ipaserver_idmax: 12000000
+    ipaserver_idmax: 123300000
 
     # lab/prod current settings for example (@label)
     # ipaserver_idstart: "100000"
-    # ipaserver_idmax: "1147483646"
+    ipaserver_idmax: "1147483646"
     # ipaserver_rid_base: "100000"
     # ipaserver_secondary_rid_base: "1147583647"
    
