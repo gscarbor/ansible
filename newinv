@@ -18,12 +18,12 @@ all:
     ssl_alternative_common_name: alpha.local.net
     
     ipaserver_domain: omicron.local.net
-    ipaserver_realm: alpha.local.net
+    ipaserver_realm: beta.local.net
     
     # The desired idmax:
     #        ipaserver_idmax: 1147483646
-   # ipaserver_idstart: 100000
-    ipaserver_idmax: 15000000
+    ipaserver_idstart: 100000
+    #ipaserver_idmax: 15000000
 
     # lab/prod current settings for example (@label)
     # ipaserver_idstart: "100000"
