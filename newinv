@@ -22,8 +22,8 @@ all:
     
     # The desired idmax:
     #        ipaserver_idmax: 1147483646
-    ipaserver_idstart: 140000
-    junk_var: "blah"
+    #ipaserver_idstart: 140000
+    #junk_var: "blah"
     #ipaserver_idmax: 123300000
 
     # lab/prod current settings for example (@label)
