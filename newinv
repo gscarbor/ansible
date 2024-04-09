@@ -10,28 +10,11 @@ ipareplicas:
 
 all:
   vars:
-    inventory_managed_schedules:
-      - "dev-lab@activate_stage_users"
-      - "dev-lab@admin_ipa_status"
-
-    ipa_environment: qa
-    ssl_alternative_common_name: alpha.local.net
     
-    #ipaserver_domain: kitty.local.net
-    ipaserver_realm: fluffy.local.net
-    
-    # The desired idmax:
-    #        ipaserver_idmax: 1147483646
-    #ipaserver_idstart: 140000
-    #junk_var: "blah"
-    #ipaserver_idmax: 123300000
-
-    # lab/prod current settings for example (@label)
-    # ipaserver_idstart: "100000"
+    ipaserver_idstart: 140000
+    junk_var: "blah"
+       
     ipaserver_idmax: "1147483646"
-    # ipaserver_rid_base: "100000"
-    # ipaserver_secondary_rid_base: "1147583647"
-   
     ipaserver_no_pkinit: yes
     ipaserver_no_hbac_allow: yes
     ipaclient_mkhomedir: yes
