@@ -11,8 +11,8 @@ ipareplicas:
 all:
   vars:
     
-    ipaserver_idstart: 140000
-    junk_var: "blah"
+    #ipaserver_idstart: 140000
+    #junk_var: "blah"
        
     ipaserver_idmax: "1147483646"
     ipaserver_no_pkinit: yes
