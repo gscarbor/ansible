@@ -3,9 +3,11 @@ ipaserver:
     alpha.local.net:
 
 ipareplicas:
+  vars:
+    group_var: group
   hosts:
     beta.local.net:  
-      #beta_var: local
+      beta_var: local
     gamma.local.net:
     delta.local.net:
 
