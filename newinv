@@ -5,7 +5,7 @@ ipaserver:
 ipareplicas:
   hosts:
     beta.local.net:  
-      beta_var: local
+      #beta_var: local
     gamma.local.net:
     delta.local.net:
 
