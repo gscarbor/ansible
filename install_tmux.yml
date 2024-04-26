@@ -11,5 +11,8 @@
       ansible.builtin.dnf:
         name: tmux
         state: present
+    
+    - debug: 
+      var: {{ package }}
   
         
