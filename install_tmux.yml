@@ -13,6 +13,6 @@
         state: present
     
     - debug: 
-      var: {{ package }}
+        var: {{ package }}
   
         
