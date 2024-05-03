@@ -6,6 +6,9 @@
 # curl call to trigger the event
 # curl  --header "Content-Type: application/json"   --request POST   --data '{"message": "CRITICAL"}' "http://eda24.local.net:5000/endpoint"
 
+# curl --header "Content-Type: application/json"  --request POST   --data '{"message":"CRITICAL", "event":{"fields":{"source":"ansible.local.net"}}}'   http://eda24.local.net:5000/payload
+
+
 
   ## Define our source for events
 
