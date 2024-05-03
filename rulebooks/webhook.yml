@@ -4,8 +4,7 @@
 
 
 # curl call to trigger the event
-# curl  -k --header "Content-Type: application/json"   --request POST   --data '{"message": "CRITICAL"}' "http://eda24.local.net:5000/payload
-
+# curl  --header "Content-Type: application/json"   --request POST   --data '{"message": "CRITICAL"}' "http://eda24.local.net:5000/endpoint"
 
 
   ## Define our source for events
