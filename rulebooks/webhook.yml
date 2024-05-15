@@ -23,7 +23,7 @@
 
   rules:
     - name: service|fault state(httpd)
-      condition: event.payload.message == "CRITICAL"    #and event.payload.meta.hosts == "node761.local.net"
+      condition: event.payload.message == "CRITICAL*"    #and event.payload.meta.hosts == "node761.local.net"
 
        
   ## Define the action we should take should the condition be met
