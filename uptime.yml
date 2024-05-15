@@ -5,8 +5,8 @@
   gather_facts: false
   tasks:
   - name: output uptime
-    shell: whoami
-    #shell: uptime
+    #shell: whoami
+    shell: uptime
     register: command_output
     
   - debug: 
