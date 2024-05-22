@@ -1,0 +1,18 @@
+---
+- hosts: all
+  #hosts: all
+  #remote_user: awx
+  gather_facts: false
+  tasks:
+  - name: output uptime
+    #shell: whoami
+    shell: uptime
+    register: command_output
+    
+  - debug: 
+      var: command_output.stdout_lines
+ 
+  - name: Save result for workflow
+      ansible.builtin.set_stats:
+        data:
+          test_result_uptime: OK
