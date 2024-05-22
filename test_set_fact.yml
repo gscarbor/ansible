@@ -13,5 +13,6 @@
       var: command_output.stdout_lines
  
   - name: Save result for workflow
-      ansible.builtin.set_stats:
+    ansible.builtin.set_stats:
+      data:
         test_result_uptime: False
