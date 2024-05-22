@@ -14,5 +14,4 @@
  
   - name: Save result for workflow
       ansible.builtin.set_stats:
-        data:
-          test_result_uptime: OK
+        test_result_uptime: False
