@@ -4,7 +4,9 @@
   gather_facts: false
   tasks:
   - name: test timeout sleep 8 hrs
-    shell: sleep 28800
+    shell: >-
+      nohup bash -c 'sleep 30 ;
+                     echo "SUCCESS" > /tmp/success.message1 ;' & 
 
   - name: run uptime
     shell: uptime
