@@ -1,13 +1,11 @@
 ---
 - hosts: all
-  #timeout: 30
+  timeout: 30
   gather_facts: false
   tasks:
   - name: test timeout sleep 8 hrs
-    shell: >-
-      nohup bash -c 'sleep 30 ;
-                     echo "SUCCESS" > /tmp/success.message1 ;' & 
-
+    shell: sleep 60000
+    
   - name: run uptime
     shell: uptime
     
