@@ -1,11 +1,11 @@
 ---
 - hosts: all
-  timeout: 3000
+  timeout: 13
   gather_facts: false
   tasks:
   - name: test timeout sleep 8 hrs
     shell: sleep 60000
-    timeout: 13
+    #timeout: 13
 
     
   - name: run uptime
