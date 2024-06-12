@@ -5,9 +5,8 @@
   - debug:
       var: subgroup2
   - name: set variable
-    ansible.builtin.set_stats:
-      data:
-        subgroup: GroupA
+    ansible.builtin.set_fact:
+      subgroup: GroupA
        
   - debug: 
       var: subgroup
