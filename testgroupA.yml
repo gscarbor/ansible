@@ -3,7 +3,7 @@
   gather_facts: false
   tasks:
   - debug:
-      var: subgroup2
+      var: subgroup
   - name: set variable
     ansible.builtin.set_fact:
       subgroup: GroupA
