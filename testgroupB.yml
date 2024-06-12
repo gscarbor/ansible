@@ -1,0 +1,15 @@
+---
+- hosts: all
+  gather_facts: false
+  tasks:
+  - debug:
+      var: subgroup
+  
+  - name: set variable
+    ansible.builtin.set_stats:
+      data:
+        subgroup: GroupB
+       
+  - debug: 
+      var: subgroup
+ 
