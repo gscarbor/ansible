@@ -4,4 +4,6 @@
   tasks:
   - debug: 
       var: subgroup
+  - name: check uptime
+    command:  uptime
  
