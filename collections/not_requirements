@@ -1,7 +1,0 @@
-collections:
-  #- name: redhat.rhel_system_roles
-  #- name: community.general
-  #- name: epfl_si.rhel
-  #- name: ansible.posix
-  #- name: azure.azcollection
-  #- name: ansible.controller
