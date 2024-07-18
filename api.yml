@@ -4,7 +4,7 @@
   tasks:
   - name: test api connection
     ansible.builtin.uri:
-        url: "https://aap23.local.net/api/v2/users/"
+        url: "https://aap24.local.net/api/v2/users/"
         method: GET
         user: "{{ ansible_user }}"
         password: "{{ ansible_password }}"
