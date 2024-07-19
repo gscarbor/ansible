@@ -11,6 +11,8 @@
         validate_certs: False
         return_content: yes
         force_basic_auth: yes
+    debug: ansible_password
+  
         #headers:
          # Content-Type: "application/json"
          # Accept: "application/json"
