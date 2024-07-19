@@ -12,8 +12,8 @@
         return_content: yes
         force_basic_auth: yes
 
-  - name: View password
-    debug: ansible_password
+  - debug: 
+      var: ansible_password
   
         #headers:
          # Content-Type: "application/json"
