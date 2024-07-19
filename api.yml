@@ -11,6 +11,8 @@
         validate_certs: False
         return_content: yes
         force_basic_auth: yes
+
+  - name: View password
     debug: ansible_password
   
         #headers:
