@@ -1,0 +1,21 @@
+- name: webcheck of file server
+  hosts: web
+  sources:
+    - ansible.eda.url_check:
+        urls:
+          - http://asgard.local.net
+        delay: 10
+  rules:
+    - name: Web site is up
+      condition: event.url_check.status == "up"
+      ##Define the action that should be taken
+      action:
+        debug:
+          msg: "Web site is up"
+          
+    - name: Web site is down
+      condition: event.url_check.status == "down"
+      action:
+        debug:
+          msg: "Web site is down"
+          
