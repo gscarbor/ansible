@@ -3,7 +3,7 @@
 
   sources:
     - ansible.eda.kafka:
-        host: kafka-0.kafka-headless.kafka.svc.cluster.local
+        host: kafka.local.net
         port: 9092
         topic: kafka-test-topic
         group_id: ansible-eda
