@@ -10,7 +10,7 @@
     
   rules:
     - name: kafka
-      condition: event.message != ""
+      condition: event.message = "HELLO"
       action:
         debug:
           msg: "You are good!"
