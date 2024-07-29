@@ -3,7 +3,7 @@
 
   sources:
     - ansible.eda.kafka:
-        host: ansible.local.net
+        host: 10.0.87.116
         port: 9092
         topic: kafka-test-topic
         
