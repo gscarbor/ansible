@@ -5,7 +5,7 @@
 
 # curl call to trigger the event
 
-# curl --header "Content-Type: application/json"  --request POST   --data '{"message":"CRITICAL", "event":{"fields":{"source":"ansible.local.net"}}}'   http://eda24.local.net:5000/payload
+# curl --header "Content-Type: application/json"  --request POST   --data '{"message":"CRITICAL", "event":{"fields":{"source":"node891.local.net"}}}'   http://eda24.local.net:5000/payload
 
 
 
@@ -23,7 +23,7 @@
 
   rules:
     - name: service|fault state(httpd)
-      condition: event.payload.message == "CRITICAL"    #and event.payload.meta.hosts == "node761.local.net"
+      condition: event.payload.message == "CRITICAL"
 
        
   ## Define the action we should take should the condition be met
