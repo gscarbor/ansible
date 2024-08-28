@@ -19,6 +19,6 @@
       #condition: event.body.message != ""         #<------ Neither condition works
       
       action:
-        debug:
-          msg: "You are good!"
+        print_event:
+          pretty: true
         
