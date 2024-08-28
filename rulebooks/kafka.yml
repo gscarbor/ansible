@@ -20,5 +20,5 @@
       
       action:
         debug:
-          msg: "{{ event }}"
+          msg: "{{ event.payload }} - {{ event.body }}"
         
