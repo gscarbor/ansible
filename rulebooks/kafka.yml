@@ -11,7 +11,7 @@
   rules:
     - name: kafka
       #condition: event.body.message == "HELLO"
-      condition: event.body.message != ""         <------ Neither condition works
+      condition: event.body.message != ""         #<------ Neither condition works
       action:
         debug:
           msg: "You are good!"
