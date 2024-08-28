@@ -12,12 +12,13 @@
   rules:
     - name: kafka
       condition:
-        any:
-          - event.payload is defined
-          - event.body is defined
+        #any:
+        #  - event.payload is defined
+        #  - event.body is defined
       #condition: event.body.message == "HELLO"
       #condition: event.body.message != ""         #<------ Neither condition works
+      condition: event is defined
       action:
         debug:
-          msg: "{{ even }}"
+          msg: "{{ event }}"
         
