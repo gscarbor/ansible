@@ -15,9 +15,9 @@
         #any:
         #  - event.payload is defined
         #  - event.body is defined
-      #condition: event.body.message == "HELLO"
-      #condition: event.body.message != ""         #<------ Neither condition works
-      condition: event is defined
+      condition: event.body.message == "HELLO"
+      condition: event.body.message != ""         #<------ Neither condition works
+      
       action:
         debug:
           msg: "{{ event }}"
