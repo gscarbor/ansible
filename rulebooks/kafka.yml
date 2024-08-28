@@ -20,5 +20,5 @@
       
       action:
         debug:
-          msg: "{{ event.payload }} - {{ event.body }}"
+          msg: "You are good!"
         
