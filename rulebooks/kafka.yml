@@ -1,5 +1,5 @@
 - name: Listen for events on kafka
-  hosts: all
+  hosts: 127.0.0.1
 
   sources:
     - ansible.eda.kafka:
