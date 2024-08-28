@@ -6,6 +6,7 @@
         host: 10.0.78.116
         port: 9092
         topic: kafka-test-topic
+        groupId: "netops"
         
     
   rules:
