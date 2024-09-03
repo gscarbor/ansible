@@ -9,7 +9,7 @@
         owner: root
         group: root
         mode: '0777'
-        #access_time: preserve
-        #modification_time: preserve
+        access_time: preserve
+        modification_time: preserve
       #register: sudo_file_existance_var
       #delegate_to: localhost
