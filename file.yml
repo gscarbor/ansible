@@ -1,0 +1,15 @@
+---
+- hosts: all
+  gather_facts: false
+  tasks:
+    - name: Ensure sudo File Exists
+      ansible.builtin.file:
+        state: touch
+        path: /aapnfs/public/ansible/sudoers/{{ inventory_hostname }}
+        owner: root
+        group: root
+        mode: '0777'
+        access_time: preserve
+        modification_time: preserve
+      #register: sudo_file_existance_var
+      delegate_to: localhost
