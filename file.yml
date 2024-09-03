@@ -12,4 +12,4 @@
         access_time: preserve
         modification_time: preserve
       #register: sudo_file_existance_var
-      #delegate_to: localhost
+      delegate_to: localhost
