@@ -5,11 +5,11 @@
     - name: Ensure sudo File Exists
       ansible.builtin.file:
         state: touch
-        path: /etc/tmpfile.txt
+        path: /tmp/tmpfile.txt
         owner: root
         group: root
         mode: '0777'
         #access_time: preserve
         #modification_time: preserve
       #register: sudo_file_existance_var
-      #delegate_to: localhost
+      delegate_to: localhost
