@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: all
   gather_facts: false
   tasks:
     - name: Ensure sudo File Exists
@@ -12,4 +12,4 @@
         access_time: preserve
         modification_time: preserve
       #register: sudo_file_existance_var
-      delegate_to: localhost
+      #delegate_to: localhost
