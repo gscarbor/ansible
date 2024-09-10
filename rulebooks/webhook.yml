@@ -7,7 +7,7 @@
 
 # curl --header "Content-Type: application/json"  --request POST   --data '{"message":"CRITICAL", "event":{"fields":{"source":"node891.local.net"}}}'   http://eda24.local.net:5000/payload
 
-
+# make sure that you have 'limit' set to prompt for update on the template
 
   ## Define our source for events
 
