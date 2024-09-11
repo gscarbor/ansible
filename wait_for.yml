@@ -1,0 +1,19 @@
+---
+- hosts: all
+  #hosts: all
+  #remote_user: awx
+  gather_facts: false
+  tasks:
+  - name: reboot system
+    #shell: whoami
+    shell: reboot
+  - name: Wait for device to come back 
+    wait_for:
+      port: 22
+      state: started
+      timeout: 500
+      delay: 60
+      host: '{{ inventory_hostname }}'
+
+  - name: uptime
+    shell: uptime
