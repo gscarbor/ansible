@@ -1,0 +1,17 @@
+---
+- name: Update Nodes using Apt and reboot
+   hosts: ranchdevshq3.mtnam.org
+   become: true
+   become_user: root
+   gather_facts: true
+   vars:
+     ansible_distribution: "Ubuntu"
+     ansible_distribution_major_version: "20"
+     ansible_distribution_file_variety: "Debian"
+     ansible_distribution_release: "focal"
+     ansible_distribution_version: "20.04"
+   tasks:
+    - name: update apt packages
+       shell:  uptime
+    - debug:
+        var: ansible_distribution
