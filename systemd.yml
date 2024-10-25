@@ -6,4 +6,5 @@
       ansible.builtin.systemd:
         name: chronyd
         enabled: yes
+        daemon_reload: true
         state: restarted
