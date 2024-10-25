@@ -4,6 +4,6 @@
   tasks:
     - name: Restart chronyd if changed; Start if not started
       ansible.builtin.systemd:
-      name: chronyd
-      enabled: yes
-      state: restarted
+        name: chronyd
+        enabled: yes
+        state: restarted
