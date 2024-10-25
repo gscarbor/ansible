@@ -7,4 +7,4 @@
         name: chronyd
         enabled: yes
         #daemon_reload: true
-        state: start
+        state: started
