@@ -1,0 +1,5 @@
+- name: Restart chronyd if changed; Start if not started
+  systemd:
+    name: chronyd
+    enabled: yes
+    state: "{{ 'restarted' if (template_output.changed) else 'started' }}"
