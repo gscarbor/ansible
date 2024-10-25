@@ -1,10 +1,10 @@
 ---
-- hosts: localhost
+- hosts: all
   gather_facts: true
   tasks:
     - name: Restart chronyd if changed; Start if not started
       ansible.builtin.systemd:
         name: chronyd
         enabled: yes
-        #daemon_reload: true
-        state: started
+        daemon_reload: true
+        state: restarted
