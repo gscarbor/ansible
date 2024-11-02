@@ -3,13 +3,13 @@
   hosts: all
   gather_facts: no
   become: true
-  become_user: joe
-  become_method: su
-  become_exe: sudo su -
+  become_user: root
+  become_method: sudo
+  #become_exe: sudo su -
 
   tasks:
   - name: verify the id
-    shell: 'whoami'
+    shell: ls /root
     register: cli_out
 
   - debug: var=cli_out.stdout_lines
