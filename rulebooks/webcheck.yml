@@ -3,7 +3,7 @@
   sources:
     - ansible.eda.url_check:
         urls:
-          - http://asgard.local.net
+          - http://aap24.local.net
         delay: 10
   rules:
     - name: Web site is up
