@@ -10,6 +10,6 @@
     register: command_output
     
   - debug: 
-      var: name
+      var: myname
  
   
