@@ -1,0 +1,9 @@
+---
+- hosts: all
+  #hosts: all
+  #remote_user: awx
+  gather_facts: false
+  tasks:
+    
+  - debug: 
+      var: myfact, mystat
