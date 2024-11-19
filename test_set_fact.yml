@@ -12,7 +12,11 @@
   - debug: 
       var: command_output.stdout_lines
  
-  - name: Save result for workflow
+  - name: Store data
     ansible.builtin.set_stats:
       data:
-        test_result_uptime: False
+        mystat: "First stat"
+
+    ansible.builtin.set_facts:
+      data:
+        myfact: "First fact"
