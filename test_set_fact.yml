@@ -10,6 +10,6 @@
         mystat: "First stat"
 
   - name: Store fact
-    ansible.builtin.set_facts:
+    ansible.builtin.set_fact:
       data:
         myfact: "First fact"
