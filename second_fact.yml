@@ -1,0 +1,22 @@
+---
+- hosts: all
+  #hosts: all
+  #remote_user: awx
+  gather_facts: false
+  tasks:
+  - name: output uptime
+    #shell: whoami
+    shell: uptime
+    register: command_output
+    
+  - debug: 
+      var: command_output.stdout_lines
+ 
+  - name: Store data
+    ansible.builtin.set_stats:
+      data:
+        mystat: "Second stat"
+
+    ansible.builtin.set_facts:
+      data:
+        myfact: "Second fact"
