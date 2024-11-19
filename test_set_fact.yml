@@ -4,13 +4,13 @@
   #remote_user: awx
   gather_facts: false
   tasks:
-  - name: output uptime
+  #- name: output uptime
     #shell: whoami
-    shell: uptime
-    register: command_output
+  #  shell: uptime
+  #  register: command_output
     
-  - debug: 
-      var: command_output.stdout_lines
+  #- debug: 
+   #   var: command_output.stdout_lines
  
   - name: Store data
     ansible.builtin.set_stats:
