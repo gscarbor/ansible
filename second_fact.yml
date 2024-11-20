@@ -4,14 +4,14 @@
   #remote_user: awx
   gather_facts: false
   tasks:
-  - name: Store stat
-    ansible.builtin.set_stats:
-      data:
-        mystat: "Second stat"
+  #- name: Store stat
+   # ansible.builtin.set_stats:
+    #  data:
+     #   mystat: "Second stat"
 
-  #- name: Store fact
-  #  ansible.builtin.set_fact:
-  #    myfact: "Second fact"
+  - name: Store fact
+    ansible.builtin.set_fact:
+      myfact: "Second fact"
         
   - debug:
-      var: mystat
+      var: myfact
