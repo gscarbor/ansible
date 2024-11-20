@@ -12,7 +12,7 @@
     tags: Linux
     
   - debug: 
-      var: ansible_run_tags.stdout
+      var: ansible_run_tags
     tags: Linux
  
     
