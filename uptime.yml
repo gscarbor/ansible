@@ -8,9 +8,9 @@
     #shell: whoami
     shell: uptime
     register: command_output
-    when: "Linux" in ansible_run_tags
+    when: "Linux" in ansible_run_tags.stdout
     
   - debug: 
-      var: ansible_run_tags
+      var: ansible_run_tags.stdout
  
   
