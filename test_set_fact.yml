@@ -8,6 +8,7 @@
     ansible.builtin.set_stats:
       data:
         mystat: "First stat"
+      aggregate: yes
 
   #- name: Store fact
    # ansible.builtin.set_fact:
