@@ -13,5 +13,6 @@
     
   - debug: 
       var: ansible_run_tags.stdout
+    tags: Linux
  
     
