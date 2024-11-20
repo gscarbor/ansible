@@ -11,8 +11,7 @@
 
   - name: Store fact
     ansible.builtin.set_fact:
-      data:
-        myfact: "Second fact"
+      myfact: "Second fact"
         
   - debug:
       var: myfact
