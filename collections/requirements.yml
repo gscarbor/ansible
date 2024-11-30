@@ -1,8 +1,8 @@
 ---
 collections:
-  #- name: jgoutin.home
+  - name: jgoutin.home
   #- name: redhat.rhel_system_roles
-  # - name: community.general
+  - name: community.general
   #- name: epfl_si.rhel
   #- name: azure.azcollection
   #- name: ansible.controller
