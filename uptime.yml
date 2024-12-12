@@ -2,7 +2,7 @@
 - hosts: all
   #hosts: all
   #remote_user: awx
-  gather_facts: false
+  gather_facts: true
   tasks:
   - name: output uptime
     #shell: whoami
