@@ -4,9 +4,9 @@
   tasks:
   - name: create set_stat vars
     ansible.builtin.set_stats:
-    data:
-      fname: ""
-      lname: ""
-      ssn: ""
+      data:
+        fname: ""
+        lname: ""
+        ssn: ""
 #  - debug: 
  #     var: ansible_password
