@@ -7,5 +7,6 @@
   - ansible.builtin.set_stats:
       data:
         fname: "Bob"
+      per_host = False
   - debug: 
       var: fname
