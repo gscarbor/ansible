@@ -4,3 +4,7 @@
   tasks:
   - debug: 
       var: fname
+  - debug:
+      var: lname
+  - debug:
+      var: ssn
