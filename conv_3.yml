@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  gather_facts: true
+  tasks:
+  - name: set ssn
+    shell: uptime
+    #fname: "Bob"
+    #lname: "Woodward"
+    ssn: "567"
+  - debug: 
+      var: ssn
