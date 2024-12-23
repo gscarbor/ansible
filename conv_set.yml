@@ -8,5 +8,6 @@
         fname: ""
         lname: ""
         ssn: ""
+      per_host: False
 #  - debug: 
  #     var: ansible_password
