@@ -1,9 +1,7 @@
 ---
 - hosts: localhost
   gather_facts: true
-  tasks:
   fname: "Bob"
-      #lname: ""
-      #ssn: ""
+  tasks:
   - debug: 
       var: fname
