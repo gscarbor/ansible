@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  gather_facts: true
+  tasks:
+  - name: test api connection
+    ansible.builtin.set_stats:
+    data:
+      fname: ""
+      lname: ""
+      ssn: ""
+#  - debug: 
+ #     var: ansible_password
