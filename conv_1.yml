@@ -6,6 +6,6 @@
   tasks:
   - ansible.builtin.set_stats:
       data:
-        fname: Bob
+        fname: "Bob"
   - debug: 
       var: fname
