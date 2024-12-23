@@ -1,7 +1,8 @@
 ---
 - hosts: localhost
   gather_facts: true
-  ssn: "567"
+  vars:
+    ssn: "567"
   tasks:
   - debug: 
       var: ssn
