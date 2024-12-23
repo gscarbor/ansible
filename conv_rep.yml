@@ -7,6 +7,6 @@
     #fname: "Bob"
       #lname: ""
       #ssn: ""
-      out_txt = "{{ fname }}" + "{{ lname }}" + "{{ ssn }}"
+      out_txt = " "{{ fname }}" + "{{ lname }}" + "{{ ssn }}" "
   - debug: 
       var: out_txt
