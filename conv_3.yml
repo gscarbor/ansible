@@ -1,8 +1,9 @@
 ---
 - hosts: localhost
   gather_facts: true
-  vars:
-    ssn: "567"
   tasks:
+  - ansible.builtin.set_stats:
+      data:
+        ssn: ssn
   - debug: 
       var: ssn
