@@ -1,11 +1,7 @@
 ---
 - hosts: localhost
   gather_facts: true
+  lname: "Woodward"
   tasks:
-  - name: set lname
-    shell: uptime
-    #fname: "Bob"
-    lname: "Woodward"
-      #ssn: ""
   - debug: 
       var: lname
