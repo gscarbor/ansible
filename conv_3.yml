@@ -4,6 +4,6 @@
   tasks:
   - ansible.builtin.set_stats:
       data:
-        ssn: ssn
+        ssn: "567"
   - debug: 
       var: ssn
