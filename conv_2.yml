@@ -1,8 +1,9 @@
 ---
 - hosts: localhost
   gather_facts: true
-  vars:
-    lname: "Woodward"
   tasks:
+  - ansible.builtin.set_stats:
+      data:
+        lname: Woodward
   - debug: 
       var: lname
