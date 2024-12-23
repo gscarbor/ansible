@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  gather_facts: true
+  tasks:
+  - name: report
+    shell: uptime
+    #fname: "Bob"
+      #lname: ""
+      #ssn: ""
+  out_txt = "{{ fname + lname + ssn }}"
+  - debug: 
+      var: out_txt
