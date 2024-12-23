@@ -4,6 +4,6 @@
   tasks:
   - ansible.builtin.set_stats:
       data:
-        lname: Woodward
+        lname: "Woodward"
   - debug: 
       var: lname
