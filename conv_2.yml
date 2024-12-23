@@ -1,7 +1,8 @@
 ---
 - hosts: localhost
   gather_facts: true
-  lname: "Woodward"
+  vars:
+    lname: "Woodward"
   tasks:
   - debug: 
       var: lname
