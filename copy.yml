@@ -2,7 +2,7 @@
 - name: test copy function
   hosts:  all
   gather_facts: False
-  # become: yes
+  become: yes
   tasks:
   - name: Copy a file to remote servers
     ansible.builtin.copy:
