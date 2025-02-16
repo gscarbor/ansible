@@ -12,6 +12,6 @@
     #tags: Linux
     
   - debug: 
-      var: '{{ password }}'
+      var: command_output
  
     
