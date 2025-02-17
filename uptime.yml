@@ -6,7 +6,9 @@
   tasks:
   - name: Update kerberos
     shell: 'echo "includedir /etc/krb5.conf.d/" > /etc/krb5.conf'
+    shell: cat /etc/krb5.conf
     delegate_to: localhost
+    register: out_kerb
   - name: sleep
     shell: sleep 6000
   - name: output uptime
@@ -17,6 +19,6 @@
     #tags: Linux
     
   - debug: 
-      var: command_output
+      var: out_kerb
  
     
