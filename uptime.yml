@@ -10,7 +10,7 @@
     delegate_to: localhost
     register: out_kerb
   - name: sleep
-    shell: sleep 6000
+    shell: sleep 6
   - name: output uptime
     #shell: whoami
     shell: uptime
