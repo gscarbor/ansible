@@ -4,6 +4,11 @@
   #remote_user: awx
   gather_facts: true
   tasks:
+  - name: Update kerberos
+    shell: 'echo "includedir /etc/krb5.conf.d/" > /etc/krb5.conf'
+    delegate_to: localhost
+  - name: sleep
+    shell: sleep 6000
   - name: output uptime
     #shell: whoami
     shell: uptime
