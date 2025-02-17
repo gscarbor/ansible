@@ -5,8 +5,9 @@
   gather_facts: true
   tasks:
   - name: Update kerberos
-    shell: 'echo "includedir /etc/krb5.conf.d/" > /etc/krb5.conf'
-    shell: cat /etc/krb5.conf
+    shell:  |
+      echo "includedir /etc/krb5.conf.d/" > /etc/krb5.conf
+      cat /etc/krb5.conf
     delegate_to: localhost
     register: out_kerb
   - name: sleep
