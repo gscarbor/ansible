@@ -5,7 +5,7 @@
   gather_facts: false
   tasks:
   - name: test share
-    shell: cat /share_files/test.txt
+    shell: ls -la /
     delegate_to: localhost
     register: out_put
  # - name: sleep
