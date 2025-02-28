@@ -4,10 +4,10 @@
   #remote_user: awx
   gather_facts: false
   tasks:
-  - name: test share
-    shell: ls -la /
-    delegate_to: localhost
-    register: out_put
+  #- name: test share
+  #  shell: ls -la /
+  #  delegate_to: localhost
+  #  register: out_put
  # - name: sleep
  #   shell: sleep 6
   - name: output uptime
