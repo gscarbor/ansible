@@ -18,6 +18,6 @@
     #tags: Linux
     
   - debug: 
-      var: out_put
+      var: command_output
  
     
