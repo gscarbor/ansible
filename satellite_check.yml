@@ -1,0 +1,16 @@
+---
+- hosts: all
+  serial: 1
+  #remote_user: awx
+  gather_facts: false
+  tasks:
+  - name: "Publish a new version of the content view"
+    redhat.satellite.content_view_version:
+      server_url: "https://satellite.local.net"
+      username: "admin"
+      password: "redhat"
+      organization: "My_Organization"
+      content_view: "test"
+      version: "1.0"
+      state: absent
+  register: publish_result
