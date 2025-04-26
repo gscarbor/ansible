@@ -4,7 +4,7 @@
   #remote_user: awx
   gather_facts: false
   tasks:
-  - name: "Publish a new version of the content view"
+  - name: "Ensure content view version 11.0 doesn't exist"
     redhat.satellite.content_view_version:
       server_url: "https://satellite.local.net"
       username: "admin"
