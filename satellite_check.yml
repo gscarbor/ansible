@@ -13,4 +13,3 @@
       content_view: "test"
       version: "1.0"
       state: absent
-  register: publish_result
