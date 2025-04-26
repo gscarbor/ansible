@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: localhost
   serial: 1
   #remote_user: awx
   gather_facts: false
