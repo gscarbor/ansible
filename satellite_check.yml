@@ -13,3 +13,4 @@
       content_view: "test"
       version: "1.0"
       state: absent
+      validate_certs: false
