@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: false
+  tasks:
+  - name: try default
+    set_fact:
+      verb: "boogey"
+    debug:
+    msg: "Printed Line: {{ verb | default('blah') }}"
