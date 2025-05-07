@@ -1,9 +1,6 @@
 ---
-- hosts: all
+- hosts: localhost
   gather_facts: false
   tasks:
-  - name: try default
-    set_fact:
-      verb: "boogey"
-    debug:
-    msg: "Printed Line: {{ verb | default('blah') }}"
+  - name: Load tasks
+    include_tasks: "{{ ansible_os_family | default('down') }}-{{ verb | default('up') }}-v{{ inventory_version | default('1.0') }}{{ adhoc_patch | default(False) | ternary('-adhoc','') }}.yaml"
