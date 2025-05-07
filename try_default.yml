@@ -3,4 +3,4 @@
   gather_facts: true
   tasks:
   - name: Load tasks
-    include_tasks: "{{ ansible_os_family | default('down') }}-{{ verb | default('up') }}-v{{ inventory_version | default('1.0') }}{{ adhoc_patch | default(False) | ternary('-adhoc','') }}.yaml"
+    include_tasks: "{{ ansible_os_family }}-{{ verb | default('up') }}-v{{ inventory_version | default('1.0') }}{{ adhoc_patch | default(False) | ternary('-adhoc','') }}.yaml"
