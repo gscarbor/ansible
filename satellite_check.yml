@@ -6,7 +6,7 @@
   tasks:
   - name: "Ensure content view version 11.0 doesn't exist"
     redhat.satellite.content_view_version:
-      server_url: "https://satellite.local.net"
+      server_url: "https://rhel91.local.net"
       username: "admin"
       password: "redhat"
       organization: "My_Organization"
