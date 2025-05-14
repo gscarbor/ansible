@@ -1,23 +1,15 @@
 ---
 - hosts: all
-  serial: 1
-  #remote_user: awx
   gather_facts: false
   tasks:
-  #- name: test share
-  #  shell: ls -la /
-  #  delegate_to: localhost
-  #  register: out_put
- # - name: sleep
- #   shell: sleep 6
   - name: output uptime
-    #shell: whoami
     shell: uptime
     register: command_output
-    #when: '"Linux" in ansible_run_tags.stdout'
-    #tags: Linux
     
   - debug: 
       var: command_output
- 
+  - debug:
+      var: ansible_port
+  - debug:
+      var: ansible_winrm_scheme
     
