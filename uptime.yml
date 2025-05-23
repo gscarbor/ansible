@@ -8,8 +8,5 @@
     
   - debug: 
       var: command_output
-  - debug:
-      var: ansible_port
-  - debug:
-      var: ansible_winrm_scheme
+  
     
