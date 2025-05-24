@@ -8,7 +8,7 @@
     redhat.satellite.content_view_version:
       server_url: "https://rhel91.local.net"
       username: "admin"
-      password: "redhat"
+      password: "re222dhat"
       organization: "My_Organization"
       content_view: "test"
       version: "11.0"
