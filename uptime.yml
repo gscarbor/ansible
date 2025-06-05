@@ -8,5 +8,9 @@
     
   - debug: 
       var: command_output
+
+  - name: pause
+    ansible.builtin.pause
+      minutes: 10
   
     
