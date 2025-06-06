@@ -3,14 +3,10 @@
   gather_facts: false
   tasks:
   - name: output uptime
-    shell: ls -la
+    shell: uptime
     register: command_output
     
   - debug: 
       var: command_output
 
-  - name: pause
-    ansible.builtin.pause:
-      minutes: 10
-  
     
