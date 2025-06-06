@@ -3,7 +3,7 @@
   gather_facts: false
   tasks:
   - name: output uptime
-    shell: uptime
+    shell: ls -la
     register: command_output
     
   - debug: 
