@@ -7,6 +7,6 @@
     register: command_output
     
   - debug: 
-      var: "{{ ansible_network_os }}"
+      var: local_context_data
 
     
