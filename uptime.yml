@@ -7,6 +7,6 @@
     register: command_output
     
   - debug: 
-      var: command_output
+      var: "{{ local_context_data }}"
 
     
