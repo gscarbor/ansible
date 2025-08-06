@@ -8,6 +8,6 @@
     register: command_output
     
   - debug: 
-      var: command_output
+      msg: "The value is {{ command_output }}"
 
     
