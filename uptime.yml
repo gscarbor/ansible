@@ -1,6 +1,5 @@
 ---
 - hosts: all
-  no_log: true
   gather_facts: true
   tasks:
   - name: output uptime
