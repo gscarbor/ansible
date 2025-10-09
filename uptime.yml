@@ -4,7 +4,9 @@
   tasks:
   - name: output uptime
     shell: uptime
+    #register: command_output
+  - name: list files
+    shell: ls -la /myfiles
     register: command_output
-    
   - debug: 
       var: command_output
