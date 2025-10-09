@@ -7,6 +7,7 @@
     #register: command_output
   - name: list files
     shell: ls -la /myfiles
+    delegate_to: localhost
     register: command_output
   - debug: 
       var: command_output
