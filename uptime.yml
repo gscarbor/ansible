@@ -3,7 +3,9 @@
   gather_facts: false
   tasks:
   - name: output uptime
-    shell: uptime
+    shell: |
+    bash;
+    uptime;
     register: command_output
   
   - debug: 
