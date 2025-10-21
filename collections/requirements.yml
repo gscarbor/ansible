@@ -5,4 +5,4 @@ collections:
   #- name: community.general
   #- name: epfl_si.rhel
   #- name: azure.azcollection
-  #- name: ansible.controller
+  - name: ansible.controller
