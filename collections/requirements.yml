@@ -1,8 +1,8 @@
 ---
 collections:
+   - name: ansible.controller
   #- name: infrastructure_engineering.utilities
   #- name: redhat.rhel_system_roles
   #- name: community.general
   #- name: epfl_si.rhel
   #- name: azure.azcollection
-  #- name: ansible.controller
