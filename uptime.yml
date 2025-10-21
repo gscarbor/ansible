@@ -6,6 +6,7 @@
     shell: |
       bash;
       uptime;
+      exit;
     register: command_output
   
   - debug: 
