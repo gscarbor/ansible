@@ -4,8 +4,8 @@
   tasks:
   - name: output uptime
     shell: |
-    bash;
-    uptime;
+      bash;
+      uptime;
     register: command_output
   
   - debug: 
