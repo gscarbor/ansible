@@ -4,5 +4,5 @@ collections:
   #- name: infrastructure_engineering.utilities
   #- name: redhat.rhel_system_roles
   #- name: community.general
-  #- name: epfl_si.rhel
+  - name: citrix.adc
   #- name: azure.azcollection
