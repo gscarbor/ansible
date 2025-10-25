@@ -1,9 +1,9 @@
 ---
 collections:
   #- name: ansible.controller
-  - name: infrastructure_engineering.utilities
+  #- name: infrastructure_engineering.utilities
   #  version: 1.0.7
   #- name: redhat.rhel_system_roles
   #- name: community.general
-  - name: citrix.adc
+  #- name: citrix.adc
   #- name: azure.azcollection
