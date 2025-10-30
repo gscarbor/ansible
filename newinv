@@ -1,4 +1,3 @@
----
 [prod_all:children]
 prod_all_standalone_sh
 prod_all_eoc_sh
